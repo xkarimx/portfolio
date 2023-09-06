@@ -1,0 +1,101 @@
+/* Card Styles */
+.card-wrap {
+  margin: 10px;
+  transform: perspective(800px);
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.card-wrap:hover .card-info {
+  transform: translateY(0);
+  transition: transform 0.3s var(--hoverEasing); /* Faster transition on hover */
+}
+
+.card-wrap:hover .card-info p {
+  opacity: 1;
+  transition: opacity 1s var(--hoverEasing), transform 1s var(--returnEasing); /* Slower transition for info disappearance */
+}
+
+.card-wrap:hover .card-info:after {
+  transition: opacity 0.5s var(--hoverEasing); /* Slower transition for info disappearance */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-wrap:hover .card-bg {
+  transition: opacity 0.3s var(--hoverEasing); /* Faster transition on hover */
+  opacity: 0.8;
+}
+
+.card-wrap:hover .card {
+  transition: box-shadow 0.3s var(--hoverEasing); /* Faster transition on hover */
+  box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, #dbb5db 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 240px;
+  width: 240px;
+  height: 320px;
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+  transition: box-shadow 0.7s var(--returnEasing); /* Slightly slower return transition */
+}
+
+.card-bg {
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: opacity 0.7s var(--returnEasing), transform 0.7s var(--returnEasing); /* Slightly slower return transition */
+  pointer-events: none;
+}
+
+.card-info {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  transform: translateY(40%);
+  transition: transform 0.3s var(--returnEasing); /* Faster transition on return */
+}
+
+.card-info p {
+  opacity: 0;
+  text-shadow: rgba(0, 0, 0, 1) 0 2px 3px;
+  transition: opacity 0.5s var(--hoverEasing), transform 1s var(--returnEasing); /* Slower transition for info disappearance */
+}
+
+.card-info * {
+  position: relative;
+  z-index: 1;
+}
+
+.card-info:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  background-blend-mode: overlay;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s var(--hoverEasing);
+}
+
+.card-info h1 {
+  color: #dbb5db;
+  font-size: 36px;
+  font-weight: 800;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+  -webkit-text-stroke: 0.5px black;
+}

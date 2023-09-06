@@ -1,0 +1,31 @@
+/* Variables */
+:root {
+  --hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
+  --returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+/* Global Styles */
+
+.title-project {
+  font-size: 50px;
+  font-weight: 800;
+  color: #dbb5db;
+  text-align: center;
+}
+
+.container p {
+  line-height: 1.5em;
+}
+
+.container h1+p,
+p+p {
+  margin-top: 10px;
+}
+
+.container {
+  padding: 40px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
