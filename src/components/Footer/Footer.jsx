@@ -10,7 +10,7 @@ function Footer() {
 
   return (
     <div className='footer'>
-      <button className='btn-footer' onClick={() => openNewWindow('https://www.github.com')}>
+      <button className='btn-footer' onClick={() => openNewWindow('https://github.com/xkarimx')}>
         <img src={Github} alt="Github" />
       </button>
       <button className='btn-footer' onClick={() => openNewWindow('https://www.linkedin.com/in/karen-perez-987000248/')}>
