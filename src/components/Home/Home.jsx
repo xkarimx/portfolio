@@ -14,9 +14,8 @@ export default function Home() {
         </div>
       </h1>
       <p className="subtitle">Welcome to my website.</p>
-      <p className="subtitle">I invite you to explore my projects and discover what I have to offer.</p>
-      <p className="subtitle">If you find something that inspires you or if you have an idea in mind, don't hesitate to get in touch.</p>
-      <p className="subtitle">Together, we can create something amazing.</p>
+      <p className="subtitle">As a full-stack developer, I invite you to explore my projects and reach out with your ideas.</p>
+      <p className="subtitle">Let's create something amazing together.</p>
     </div>
     </div>
   )

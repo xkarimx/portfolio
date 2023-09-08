@@ -35,7 +35,7 @@ function SplittingComponent() {
       <div className="card" tabIndex="0">
         <img className='img-project' src={MingaMobile} alt="Minga Mobile" />
         <div className="text-project">
-          <h2 data-splitting="" className='project-h2'>Minga Mobile</h2>
+          <h2 data-splitting="" className='project-h2'>Minga <br/> Mobile</h2>
           <p className='project-p' data-splitting="">
             Mobile design for reading, creation and edition of manga.
           </p>
@@ -45,7 +45,7 @@ function SplittingComponent() {
       <div className="card" tabIndex="0">
         <img className='img-project' src={Minga} alt="Minga" />
         <div className="text-project">
-          <h2 data-splitting="" className='project-h2'>Empire</h2>
+          <h2 data-splitting="" className='project-h2'>Minga</h2>
           <p className='project-p' data-splitting="">
             Web design for reading, creation and edition of manga.
           </p>
@@ -65,7 +65,7 @@ function SplittingComponent() {
       <div className="card" tabIndex="0">
         <img className='img-project' src={AmazingEvents} alt="Amazing Events" />
         <div className="text-project">
-          <h2 data-splitting="" className='project-h2'>Amazing Events</h2>
+          <h2 data-splitting="" className='project-h2'>Amazing <br/> Events</h2>
           <p className='project-p' data-splitting="">
             Event web site with API consumption different types of search filters are applied.
           </p>

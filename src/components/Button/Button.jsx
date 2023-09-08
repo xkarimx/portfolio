@@ -3,7 +3,7 @@ import './Button.css';
 
 export default function Button({ url }) {
   const handleClick = () => {
-    window.location.href = url;
+    window.open(url, '_blank');
   };
 
   return (
