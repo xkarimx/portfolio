@@ -39,7 +39,7 @@ function Projects() {
             <p className='project-p'>
               Web design for reading, creation and edition of manga.
             </p>
-            <Button url="https://minga-gropublanco.vercel.app/" />
+            <Button url="https://mingaweb-5vmn.vercel.app/" />
           </div>
         </div>
         <div className="card" tabIndex="0">
